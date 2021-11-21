@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Accesories shop by Kerekes Karina </title> 
+</head>
+<link rel="stylesheet" type=" text/css" href="style_shop.css"> 
+<body>
+
+<h1 id="ac"> Cool Accesories by Kerekes Karina</h1>
+<p id="con"> E-mail: KerekesKarina@yahoo.com</p>
+</body>
+<p id="spec">Specificatii despre cateva produse:</p>
+<table align="right">
+  <tr>
+    <th>Produs</th>
+    <th>Utilizare</th>
+	<th>Link</th>
+   
+  </tr>
+  <tr>
+    <td>Geanta</td>
+	<td> Depozotarea lucrurilor </td>
+    <td> <h3><a href="https://www.fashiondays.ro/p/geanta-cu-bareta-de-umar-detasabila-femei-guess-p4200621-1/">Geanta Guess </a></td>
+</tr>
+  <tr>
+    <td>Portofel</td>
+	<td> Depozitarea bunurilor </td>
+    <td> <h3><a href="https://www.fashiondays.ro/p/portofel-cu-bareta-pentru-incheietura-liza-femei-fossil-p4355356-1/ "> Portofel Fossil</a></td>
+  </tr>
+  <tr>
+     <td>Ceas</td>
+	 <td> Pentru a putea conometra trecerea timpului</td>
+	<td> <h3><a href="https://www.fashiondays.ro/p/ceas-cu-o-curea-de-piele-femei-emily-westwood-p4324850-1/ ">Ceas Emily Westwood</a></td>
+</tr>
+
+</table>
+<p class="c">
+<p class="c">
+<p class="c">
+<p class="c">
+<p class="c">
+<p class="c">
+<p class="c">
+
+<div class="myDivElement">
+<p id="spec"> Grafic in functie de pretul accesorilor: </p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+ <div align="right">
+ <canvas id="myChart" style="width:100%;max-width:600px;margin-right:100px;"></canvas>
+</div>
+<script>
+var xValues = ["Geanta ", "Ceas", "Portofel"];
+var yValues = [55, 49, 44];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+];
+
+new Chart("myChart", {
+  type: "doughnut",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+  }
+  }
+});
+</script>
+</body>
+
+<h2 id="carac">Ce ofera cumpararea accesorilor:</h2>
+<ul class="a">
+  <li>Te fac sa te simti frumoasa/frumos.</li>
+  <li>Te ajuta in viata de zi cu zi.</li>
+  <li>Iti ofera placere in a le cumpara.</li>
+  <li>In timpul cumparaturilor te poti relaxa.</li>
+  <li>Prin purtarea accesoriilor te vei simti mai sigura pe tine.</li>
+</ul>
+</div>
+<p class="c">
+<p class="c">
+
+
+<h1 id="mon" ondblclick="monotorizare()"><b><i>Vizualizarea a catora produse(slideshow)</i></u></b></h1>
+<div class="viz">
+
+<div class="slideshow-container">
+<table align="center"><tr><th>
+<div class="mySlides fade">
+<img src="geanta.jpg" width="300" height="300">
+  </div>
+</th>
+  <th>
+  <div class="mySlides fade">
+<img src="portofel.jpg" width="300"; height="300" >
+  </div>
+ </th><th>
+ <div class="mySlides fade">
+<img src="ceas.jpg" width="300"; height="300">
+  </div>
+</th>
+</tr>
+</table>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+function monotorizare()
+{
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+
+}
+  
+</script>
+
+</body>
+
+</html>

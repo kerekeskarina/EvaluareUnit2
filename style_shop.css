@@ -1,0 +1,64 @@
+
+
+ #ac {font-family: Poppins, sans-serif;
+text-align:right;
+ border: 2px solid black;
+ background-color: gray;
+  padding: 20px;
+  color:LightGray;
+  }
+ #con {text-align:right;
+    font-size: 100%;
+	color:Gray;
+	text-decoration: underline;
+	}
+#spec {text-align:right;
+  font-size: 150%;
+  color:Gray;
+  text-decoration: underline;
+  }
+
+table, th, td {
+  border: 1px solid gray;
+}
+      
+    }
+
+ #graf { text-align:right;
+    text-decoration: underline; 
+	font-size: 150%;
+	color:Gray;}
+div.myDivElement {
+  border: 1px solid black;
+  margin-top: 20px;
+  border-color: Gray;
+  background-color: LightGray;
+}
+
+#carac{text-align:center;
+  font-size: 150%;
+  color:Gray;
+  text-decoration: underline;
+  }
+ul,li { text-align:center;
+       border:0;
+       padding:0;
+       margin:0; 
+   list-style-position: inside;}
+ p.c { 
+white-space: pre;}
+
+
+div.viz { background-color:SlateGray;
+          border-color:SlateGray;
+          border: 1px solid SlateGray;
+          margin-top: 20px;
+}
+#myChart { align=right;}
+#mon {text-align:right;
+    text-decoration: underline; 
+	font-size: 150%;
+	color:Gray;}
+
+
+
